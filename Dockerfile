@@ -15,6 +15,7 @@ RUN apt-get -q update &&      \
         build-essential       \
         emacs24-nox           \
         git                   \
+        s3cmd                 \
     && apt-get clean
 
 
