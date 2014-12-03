@@ -1,8 +1,11 @@
-## -*- docker-image-name: "armbuild/ocs-service-tryit:vivid" -*-
+## -*- docker-image-name: "moul/armhf-devbox" -*-
 FROM armbuild/ocs-app-docker:vivid
+MAINTAINER Manfred Touron <m@42.am>
+
 
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter
+
 
 # Install packages
 RUN apt-get -q update &&      \
@@ -13,6 +16,7 @@ RUN apt-get -q update &&      \
         emacs24-nox           \
         git                   \
     && apt-get clean
+
 
 # Clean rootfs from image-builder
 RUN /usr/local/sbin/builder-leave
