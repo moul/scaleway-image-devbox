@@ -19,5 +19,9 @@ RUN apt-get -q update &&      \
     && apt-get clean
 
 
+# Patch rootfs
+ADD ./patches/root/ /root/
+
+
 # Clean rootfs from image-builder
 RUN /usr/local/sbin/builder-leave
