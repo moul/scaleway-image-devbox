@@ -17,6 +17,7 @@ RUN apt-get -q update &&      \
         git                   \
         libncurses5-dev       \
         s3cmd                 \
+        u-boot-tools          \
     && apt-get clean
 
 
