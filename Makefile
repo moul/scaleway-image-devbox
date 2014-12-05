@@ -1,10 +1,9 @@
 DOCKER_NAMESPACE =	moul/armhf-
 NAME =			ocs-devbox
 VERSION =		vivid
-VERSION_ALIASES =	15.04
-TITLE =			"moul' DevBox"
+VERSION_ALIASES =	15.04 latest
+TITLE =			moul devbox
 DESCRIPTION =		Image with build tools
-IS_LATEST =		1
 SOURCE_URL =		https://github.com/moul/ocs-image-devbox
 
 
